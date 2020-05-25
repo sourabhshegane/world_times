@@ -1,6 +1,6 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutterapp/services/world_time.dart';
 
 class LoadingWidget extends StatefulWidget {
@@ -9,29 +9,26 @@ class LoadingWidget extends StatefulWidget {
 }
 
 class _LoadingWidgetState extends State<LoadingWidget> {
-
-  void setupWorldTime() async{
+  void setupWorldTime() async {
     WorldTime instance = WorldTime(location: 'Berlin', url: 'Europe/Berlin');
     await instance.getTime();
-    Navigator.pushReplacementNamed(
-        context, '/home',
-        arguments: {
-          'location': instance.location,
-          'time':instance.time
-        });
+    Navigator.pushReplacementNamed(context, '/home',
+        arguments: {'location': instance.location, 'time': instance.time});
   }
 
   @override
   void initState() {
     setupWorldTime();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: EdgeInsets.all(50),
-        child: Text("Loading. Please wait"),
-      ),
-    );
+        backgroundColor: Colors.blue,
+        body: Center(
+            child: SpinKitRotatingCircle(
+          color: Colors.white,
+          size: 50.0,
+        )));
   }
 }
