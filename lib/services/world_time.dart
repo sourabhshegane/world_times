@@ -6,6 +6,7 @@ class WorldTime{
   String location;  //Location Name for UI
   String time; //Location Time
   String url;  //Actual URL for API Endpoint
+  bool isDayTime;
 
   WorldTime({this.location, this.url});
 
@@ -24,6 +25,7 @@ class WorldTime{
       now = now.add(Duration(hours: int.parse(offsetHours), minutes: int.parse(offsetMinutes)));
 
       //Set Time Property
+      isDayTime = now.hour > 6 && now.hour < 20 ? true : false;
       time = DateFormat.jm().format(now);
     }catch(e){
       print(e);

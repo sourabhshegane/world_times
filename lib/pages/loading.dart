@@ -13,7 +13,7 @@ class _LoadingWidgetState extends State<LoadingWidget> {
     WorldTime instance = WorldTime(location: 'Berlin', url: 'Europe/Berlin');
     await instance.getTime();
     Navigator.pushReplacementNamed(context, '/home',
-        arguments: {'location': instance.location, 'time': instance.time});
+        arguments: {'location': instance.location, 'time': instance.time, 'isDayTime' : instance.isDayTime});
   }
 
   @override
