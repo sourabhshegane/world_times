@@ -1,16 +1,9 @@
 # flutterapp
 
-A new Flutter application.
+A Flutter application which shows current time of different countries. This app uses the World Time API (http://worldtimeapi.org/) to fetch the times of different locations .
 
-## Getting Started
+Feel free to update the app and make it better !
 
-This project is a starting point for a Flutter application.
+Developed as a part of learning Flutter with awesome tutorials from the NetNinja. Link to playlist https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Enjoy Coding !.
