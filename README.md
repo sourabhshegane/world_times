@@ -6,4 +6,4 @@ Feel free to update the app and make it better !
 
 Developed as a part of learning Flutter with awesome tutorials from the NetNinja. Link to playlist https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ.
 
-Enjoy Coding !.
+Enjoy Coding !
