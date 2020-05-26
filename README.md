@@ -1,4 +1,4 @@
-# flutterapp
+# world_times flutter app
 
 A Flutter application which shows current time of different countries. This app uses the World Time API (http://worldtimeapi.org/) to fetch the times of different locations .
 
